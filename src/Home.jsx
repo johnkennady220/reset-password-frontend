@@ -4,7 +4,7 @@ import axios from 'axios'
 function Home () {
     axios.defaults.withCredentials =true;
     useEffect(()=> {
-        axios.get('http://localhost:3001/home')
+        axios.get('https://reset-password-backend-api.onrender.com/home')
         .then(result => {console.log(result)
             if(result.data !== "Success"){
                 // navigate('/login')
